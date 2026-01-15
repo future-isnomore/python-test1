@@ -72,7 +72,7 @@ jobs:
           ### Optional configuration
           # SSC_LOGIN_EXTRA_OPTS: --socket-timeout=60s     # Extra 'fcli ssc session login' options
           # SC_SAST_LOGIN_EXTRA_OPTS: --socket-timeout=60s # Extra 'fcli sc-sast session login' options
-          # SSC_APPVERSION: MyApp:MyVersion                # SSC application version name, default: <org>/<repo>:<branch>
+          SSC_APPVERSION: ${{ github.repository }}:${{ github.ref_name }}                # SSC application version name, default: <org>/<repo>:<branch>
           # DO_SETUP: true                                 # Set up SSC application & version
           # SETUP_ACTION: <URL or file>                    # Customize setup action
           # SETUP_EXTRA_OPTS: --on-unsigned=ignore         # Pass extra options to setup action
