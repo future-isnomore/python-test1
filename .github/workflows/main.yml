@@ -19,4 +19,4 @@ jobs:
  
       - name: Run ScanCentral in workspace
         run: |
-          scancentral -url http://172.16.2.104:7652/scancentral-ctrl start -bt none
+          scancentral -url http://172.16.2.104:7652/scancentral-ctrl start -bt none -upload -versionid 33616 -uptoken d2557891-ea37-41a0-8342-60f4accb9468 -pool 4107c9fd-f380-4d06-a00a-bc0189652298
