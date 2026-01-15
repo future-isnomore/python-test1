@@ -8,7 +8,7 @@ on:
  
 jobs:
   scancentral-scan:
-    runs-on: test202
+    runs-on: self-hosted
  
     steps:
       - name: Checkout code
