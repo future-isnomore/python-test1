@@ -10,7 +10,7 @@ Check out the demo of the application on Youtube [here 🔗](https://youtu.be/9h
 
 Use the application live [here 🔗](https://huggingface.co/spaces/SagarBapodara/Coursera-Course-Recommendation)
 
-## Tech Uses
+## Tech Uses are
 
 **Language:** Python (3.9)
 
