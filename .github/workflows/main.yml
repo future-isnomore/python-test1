@@ -17,13 +17,13 @@ jobs:
     
       - name: Fortify ScanCentral
         run: |
-          if ("${{ github.ref_name }}" == "main") {
-             VERSION=main
+          if ("${{ github.ref_name }}" -eq "main") {
+             $VERSION = "main"
              } else {
-            VERSION=dev
+            $VERSION = "${{ github.ref_name }}"
               }
-          scancentral scan ^
-           -application "${{ github.repository }}" ^
-           -version "%VERSION%" ^
-           -scan ^
+          scancentral scan `
+           -application "${{ github.repository }}" `
+           -version $VERSION `
+           -scan `
            -upload
