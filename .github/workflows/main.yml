@@ -13,4 +13,4 @@ jobs:
     steps:
       - name: Trigger Jenkins internally
         run: |
-          C:\Windows\System32\curl.exe -X POST -u "${{ secrets.JENKINS_USER }}:${{ secrets.JENKINS_API_TOKEN }}" -H "Content-Type: application/json" -d '{"repo": "${{ github.repository }}","branch": "${{ github.ref_name }}","commit": "${{ github.sha }}","actor": "${{ github.actor }}"}' "http://localhost:8080/job/pythonpipeline/build?token=pythonpipeline&REPO=${{ github.repository }}&BRANCH=${{ github.ref_name }}&COMMIT=${{ github.sha }}&ACTOR=${{ github.actor }}"
+          C:\Windows\System32\curl.exe -X POST -u "${{ secrets.JENKINS_USER }}:${{ secrets.JENKINS_API_TOKEN }}" "http://localhost:8080/job/pythonpipeline/build?token=pythonpipeline&REPO=${{ github.repository }}&BRANCH=${{ github.ref_name }}&COMMIT=${{ github.sha }}&ACTOR=${{ github.actor }}"
