@@ -15,15 +15,3 @@ jobs:
         run: |
           C:\Windows\System32\curl.exe -X POST -u "${{ secrets.JENKINS_USER }}:${{ secrets.JENKINS_API_TOKEN }}" "http://localhost:8080/job/pythonpipeline/buildWithParameters?token=pythonpipeline&REPO=${{ github.repository }}&BRANCH=${{ github.ref_name }}&COMMIT=${{ github.sha }}&ACTOR=${{ github.actor }}"
     
-      - name: Fortify ScanCentral
-        run: |
-          if ("${{ github.ref_name }}" -eq "main") {
-             $VERSION = "main"
-             } else {
-            $VERSION = "${{ github.ref_name }}"
-              }
-          scancentral scan `
-           -application "${{ github.repository }}" `
-           -version $VERSION `
-           -scan `
-           -upload
