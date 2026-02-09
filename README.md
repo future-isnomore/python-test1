@@ -19,7 +19,7 @@ Use the application live [here 🔗](https://huggingface.co/spaces/SagarBapodara
 _Please Note that this technology is being used for the latest version. Further improvements in the project may result in changes in the technology used. It will be updated above as well._ 
 
 ## Installation / Working
-## test
+## tested
 ##password=22112121jygwq
 ### Requirements
 
