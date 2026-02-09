@@ -20,7 +20,8 @@ _Please Note that this technology is being used for the latest version. Further 
 
 ## Installation / Working
 ## tested
-##password=22112121jygwq
+## password = 22112121jygwq
+## username = 222a21
 ### Requirements
 
 ```bash
