@@ -1,4 +1,4 @@
-# Coursera-Course-Recommendation-System
+# Coursera-Course-Recommendation-Systems
 
 A course recommendation system using the Coursera Courses dataset which contains over 3,000 courses. 
 
